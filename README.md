@@ -18,4 +18,16 @@ docker compose up
 1. Clonez le référentiel :
 
    ```shell
-   git clone https://github.com/votreutilisateur/api-collection-films.git
+   git clone https://github.com/juva-quentin/MovieAPI.git
+   ```
+2. Accédez au répertoire du projet
+```shell
+cd MovieAPI
+```
+3. Contruisez le projet
+```shell
+mvn clean install
+```
+4. Lancer le projet
+L'API sera ensuite disponible à l'URL suivante : http://localhost:8080/swagger-ui/index.htm
+
