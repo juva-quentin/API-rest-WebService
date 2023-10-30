@@ -18,7 +18,7 @@ docker compose up
 1. Clonez le référentiel :
 
    ```shell
-   git clone https://github.com/juva-quentin/MovieAPI.git
+   git clone https://github.com/juva-quentin/API-rest-WebService
    ```
 2. Accédez au répertoire du projet
 ```shell
