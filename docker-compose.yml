@@ -13,6 +13,19 @@ services:
     volumes:
       - db:/var/lib/mysql
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+
+  mon-app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/movie-db # Nom du service MySQL
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: mauFJcuf5dhRMQrjj
+    depends_on:
+      - db
+
 volumes:
   db:
     driver: local

@@ -26,7 +26,7 @@ cd MovieAPI
 ```
 3. Contruisez le projet
 ```shell
-mvn clean install
+docker compose up --build
 ```
 4. Lancer le projet
 L'API sera ensuite disponible à l'URL suivante : http://localhost:8080/swagger-ui/index.htm
